@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+margin:0;
+padding: 0;
+box-sizing:border-box;
+
+}
+/* Animations */
+
+@keyframes FirstHalf {
+    0% {
+
+        background-color:rgb(0, 0, 0);
+
+
+    }
+    100% {
+
+        background-color: rgb(130, 130, 114);
+
+
+    }
+}
+@keyframes SecondHalf {
+    0% {
+
+        background-color: rgb(0, 0, 0);
+
+
+    }
+    100% {
+
+        background-color: rgb(233, 233, 130);
+
+
+    }
+ 
+}
+@keyframes Final {
+    0% {
+
+        background-color: rgb(233, 233, 130);
+
+
+
+    }
+    100% {
+
+        background-color: rgb(238, 238, 31);
+
+
+    }
+}
+main {
+
+padding:0 !important;
+
+}
+.Animation1 {
+
+   animation: FirstHalf 3s 1 forwards;
+
+}
+.Animation2 {
+
+    animation: SecondHalf 3s 1 forwards;
+ 
+ }
+ .Animation3 {
+
+    animation: Final 3s 1 forwards;
+ 
+ }
+h1 {
+
+color:red;
+
+}
+h2 {
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white !important;
+
+}
+.TimerContent {
+
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+margin:auto;
+align-items: center;
+height:100vh;
+
+}
+
+#Timer {
+display:block;
+color:white;
+
+}
+.BtnStarter {
+   display:block;
+    background-color:rgb(41, 40, 40);
+    color:white;
+    padding:10px;
+
+}
+::-webkit-scrollbar {
+
+    display:none;
+
+}
+#Greeter {
+color:orange !important;
+-webkit-text-stroke-width: 2px;
+
+}
+#BG {
+background-color:rgb(159, 103, 19);
+
+}
