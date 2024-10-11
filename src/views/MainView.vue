@@ -1,10 +1,19 @@
 <template>
     <div class="container-fluid" id="BG">
         <h2 id="Greeter"></h2>
-<div class="TimerContent ">
+       
+<!-- <div class="TimerContent ">
 <h4 id="Timer"></h4>
 <button class="BtnStarter" id="Stopper" @click.prevent="Click">Click to start</button>
+</div> -->
+<div class="Overlay">
+
+    
 </div>
+    </div>
+    <div class="container-fluid" id="BG2">
+
+
     </div>
   </template>
   <script>
