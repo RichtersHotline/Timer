@@ -12,8 +12,11 @@
 </div>
     </div>
     <div class="container-fluid" id="BG2">
+    </div>
+    <div class="container-fluid" id="BG3">
+    <div class="Boards">
 
-
+    </div>
     </div>
   </template>
   <script>
