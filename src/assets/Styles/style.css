@@ -105,9 +105,9 @@ height:85vh;
 background: rgb(122,40,18);
 }
 body {
-
-    background: rgb(238,155,1);
-    background: linear-gradient(-90deg, rgba(238,155,1,1) 0%, rgba(235,124,16,1) 50%, rgba(122,40,18,1) 100%);
+    background-color:#4A1C02 !important;
+    /* background: rgb(238,155,1);
+    background: linear-gradient(-90deg, rgba(238,155,1,1) 0%, rgba(235,124,16,1) 50%, rgba(122,40,18,1) 100%); */
 }
 #Timer {
 display:block;
@@ -132,8 +132,35 @@ color:orange !important;
 letter-spacing: 3px;
 z-index:9999;
 }
+#Windows {
+    width:100%;
+
+    display:flex;
+} 
+.Window {
+    width:100%;
+    height:64vh;
+    border:12px inset #2E1005 !important;
+   margin-left:2px;
+   background-color:rgba(205, 197, 176, 0.2);
+}
+.Outside {
+  background: rgb(238,155,1);
+    background: linear-gradient(180deg, rgba(238,155,1,1) 0%, rgba(235,124,16,1) 50%, rgba(122,40,18,1) 100%); 
+    width:100%;
+    height:100%;
+ display:flex;
+ flex-direction:column;
+ justify-content: flex-end;
+}
+.Floor {
+
+    width:100%;
+    background-color:gray;
+}
 #BG {
-   
+   padding:0 !important;
+   margin:0 !important;
     height:70vh;
     rotate:0deg;
 }
@@ -150,20 +177,27 @@ z-index:9999;
 }
 #BG2 {
     background-color:#44200A;
-    height:7vh;
+    height:4vh;
     
 }
 #BG3 {
     background-color:#2E1005;
-    height:23vh;
+    height:27vh;
     display:flex;
     justify-content: space-between;
+}
+#BGShadow {
+    background-color:#000000;
+    height:4vh;
+   position:absolute;
+   opacity:0.3;
+
 }
 .Boards {
     background-color:black;
 width:3px;
-height:23vh;
-border:2px solid black;
+height:27vh;
+border:1px solid #2E1005;
 
 
 }
