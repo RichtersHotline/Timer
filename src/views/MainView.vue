@@ -4,6 +4,9 @@
         <div class="container-fluid" id="Windows">
       <div class="Window">
 <div class="Outside">
+  <div class="WindowBuilding"></div>
+
+<div class="Build"></div>
   <div class="Floor">
 
     
@@ -94,18 +97,19 @@ mounted() {
    let Greeting = ""
    if (current < 12) {
     Greeting = "Good Morning"
+    document.getElementById("Greeter").innerHTML = Greeting +  "🌅"
 
    }
    else if (current < 18) { 
     Greeting = "Good Afternoon"
+    document.getElementById("Greeter").innerHTML = Greeting +  "🌇"
 
    }
    else {
 
     Greeting = "Good Evening"
-
+    document.getElementById("Greeter").innerHTML = Greeting +  "🌃"
    }
-    document.getElementById("Greeter").innerHTML = Greeting +  "☀️"
 
 },
 methods: {

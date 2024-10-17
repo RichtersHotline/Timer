@@ -127,10 +127,12 @@ color:white;
 
 }
 #Greeter {
-color:orange !important;
--webkit-text-stroke-width: 2px;
-letter-spacing: 3px;
+color:#9d3813 !important;
+font-family:Arial, Helvetica, sans-serif;
+-webkit-text-stroke-width: 1px;
+letter-spacing: 5px;
 z-index:9999;
+font-weight:300;
 }
 #Windows {
     width:100%;
@@ -144,9 +146,16 @@ z-index:9999;
    margin-left:2px;
    background-color:rgba(205, 197, 176, 0.2);
 }
+.WindowBuilding {
+    width:200px;
+    height:100px;
+    border:12px solid #5e5a58 !important;
+   background-color:rgba(205, 197, 176, 0.2);
+
+}
 .Outside {
   background: rgb(238,155,1);
-    background: linear-gradient(180deg, rgba(238,155,1,1) 0%, rgba(235,124,16,1) 50%, rgba(122,40,18,1) 100%); 
+    background: linear-gradient(180deg, rgb(238, 155, 1) 0%, rgba(235,124,16,1) 50%, rgba(122,40,18,1) 100%); 
     width:100%;
     height:100%;
  display:flex;
@@ -154,9 +163,19 @@ z-index:9999;
  justify-content: flex-end;
 }
 .Floor {
-
+    height:5vh;
     width:100%;
-    background-color:gray;
+    background: rgb(52,52,52);
+    background: linear-gradient(90deg, rgba(52,52,52,1) 0%, rgba(235,124,16,0.5) 98%);
+    
+}
+.Build {
+
+    width:200px;
+    height:30px;
+    background: rgb(52,52,52);
+    background: linear-gradient(90deg, rgba(52,52,52,1) 70%, rgba(235,124,16,0.5) 98%);
+
 }
 #BG {
    padding:0 !important;
