@@ -149,7 +149,7 @@ font-weight:300;
 .WindowBuilding {
     width:200px;
     height:100px;
-    border:12px solid #5e5a58 !important;
+    border:1px solid #5e5a58 !important;
    background-color:rgba(205, 197, 176, 0.2);
 
 }
@@ -162,20 +162,39 @@ font-weight:300;
  flex-direction:column;
  justify-content: flex-end;
 }
+.Roof {
+    height:40vh;
+    width:100vh;
+    border-bottom: 70px solid 		#f6ac18;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
 .Floor {
-    height:5vh;
+    height:30vh;
     width:100%;
-    background: rgb(52,52,52);
-    background: linear-gradient(90deg, rgba(52,52,52,1) 0%, rgba(235,124,16,0.5) 98%);
+    border-bottom: 40px solid 	#323031;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
     
+}
+.Building {
+    width:200px;
+    height:300px;
+    background: rgb(52,52,52);
+    background: linear-gradient(90deg, rgb(137, 86, 86) 70%, rgba(235,124,16,0.5) 98%);
 }
 .Build {
 
-    width:200px;
-    height:30px;
-    background: rgb(52,52,52);
-    background: linear-gradient(90deg, rgba(52,52,52,1) 70%, rgba(235,124,16,0.5) 98%);
+  display:flex;
+  justify-content:space-evenly
+}
+.Chair {
 
+    position:absolute;
+    width:100px;
+    height:300px;
+    background-color:orange;
+   z-index:9000;
 }
 #BG {
    padding:0 !important;

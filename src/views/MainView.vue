@@ -4,11 +4,19 @@
         <div class="container-fluid" id="Windows">
       <div class="Window">
 <div class="Outside">
-  <div class="WindowBuilding"></div>
+  <!-- <div class="WindowBuilding"></div> -->
 
-<div class="Build"></div>
+<!-- <div class="Build">
+<div class="Building"></div>
+<div class="Building"></div>
+<div class="Building"></div>
+
+</div> -->
+
+  <div class="Roof">
+
+  </div>
   <div class="Floor">
-
     
   </div>
 </div>
@@ -28,6 +36,7 @@
     </div>
     <div class="container-fluid" id="BGShadow">
     </div>
+
     <div class="container-fluid" id="BG3">
     <div class="Boards"></div>
     <div class="Boards"></div>
