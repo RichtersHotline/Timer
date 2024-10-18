@@ -3,7 +3,9 @@
         <h2 id="Greeter"></h2>
         <div class="container-fluid" id="Windows">
           <div class="Door">
-
+           <div class="DoorDetails">
+            
+           </div>
           </div>
       <div class="Window">
 <div class="Outside">
