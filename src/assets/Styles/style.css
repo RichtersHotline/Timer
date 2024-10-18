@@ -147,10 +147,14 @@ font-weight:300;
    background-color:rgba(205, 197, 176, 0.2);
 }
 .WindowBuilding {
-    width:200px;
+    width:300px;
     height:100px;
     border:1px solid #5e5a58 !important;
    background-color:rgba(205, 197, 176, 0.2);
+
+}
+.BuildingContent {
+  
 
 }
 .Outside {
@@ -162,10 +166,27 @@ font-weight:300;
  flex-direction:column;
  justify-content: flex-end;
 }
+.Door {
+
+
+    
+}
 .Roof {
+    /* margin-left:70px; */
+    position:relative;
+    top:30px;
+    left:110px;
     height:40vh;
+    width:70vh;
+    border-bottom: 70px solid 		#29334a;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+   
+}
+.Roof2 {
+    height:10vh;
     width:100vh;
-    border-bottom: 70px solid 		#f6ac18;
+    border-bottom: 25px solid 		#242d42;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
 }
@@ -175,13 +196,12 @@ font-weight:300;
     border-bottom: 40px solid 	#323031;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-    
+       display:flex;
 }
 .Building {
-    width:200px;
-    height:300px;
-    background: rgb(52,52,52);
-    background: linear-gradient(90deg, rgb(137, 86, 86) 70%, rgba(235,124,16,0.5) 98%);
+    width:300px;
+    height:53px;
+    background-color:#665F81;
 }
 .Build {
 

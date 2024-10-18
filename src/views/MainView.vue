@@ -2,6 +2,9 @@
     <div class="container-fluid" id="BG">
         <h2 id="Greeter"></h2>
         <div class="container-fluid" id="Windows">
+          <div class="Door">
+
+          </div>
       <div class="Window">
 <div class="Outside">
   <!-- <div class="WindowBuilding"></div> -->
@@ -13,16 +16,27 @@
 
 </div> -->
 
-  <div class="Roof">
-
-  </div>
-  <div class="Floor">
+  <!-- <div class="Roof">
+  </div> -->
+  <!-- <div class="Roof2">
     
-  </div>
+  </div> -->
+  <div class="Floor">
+    <!-- <div class="BuildingContent">
+    <div class="WindowBuilding">
+
+    </div>
+    <div class="Building">
+      
+    </div>
+  </div> -->
+</div>
+
 </div>
 
       </div>
-    
+      <!-- Right Side of Wall -->
+ 
     </div>
     
 <!-- <div class="TimerContent ">
