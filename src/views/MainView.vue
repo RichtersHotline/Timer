@@ -7,6 +7,7 @@
             
            </div>
           </div>
+          
       <div class="Window">
 <div class="Outside">
   <!-- <div class="WindowBuilding"></div> -->
@@ -35,6 +36,9 @@
 </div>
 
 </div>
+<div class="Cup">C</div>
+
+<div class="plate"></div>
 
       </div>
       <!-- Right Side of Wall -->
@@ -49,6 +53,7 @@
     </div>
    
     <div class="container-fluid" id="BG2">
+      
     </div>
     <div class="ShadowFlex">
     <div class="container-fluid" id="BGShadow">
