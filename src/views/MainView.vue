@@ -36,11 +36,15 @@
 </div>
 
 </div>
+<div class="OnTable">
 <div class="Cup">C</div>
+<div class="Cup2">C</div>
 
 <div class="plate"></div>
+<div class="plate2"></div>
 
       </div>
+    </div>
       <!-- Right Side of Wall -->
  
     </div>
