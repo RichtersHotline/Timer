@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid" id="BG">
-        <h2 id="Greeter"></h2>
+        <h2 class="" id="Greeter"></h2>
         <div class="container-fluid" id="Windows">
           <div class="Door">
            <div class="DoorDetails">
@@ -36,15 +36,16 @@
 </div>
 
 </div>
-<div class="OnTable">
 <div class="Cup">C</div>
 <div class="Cup2">C</div>
 
 <div class="plate"></div>
 <div class="plate2"></div>
-
+<div class="OnTable">
+  
+</div>
       </div>
-    </div>
+      
       <!-- Right Side of Wall -->
  
     </div>
