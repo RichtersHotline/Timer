@@ -2,14 +2,14 @@
     <div class="container-fluid" id="BG">
         <h2 class="" id="Greeter"></h2>
         <div class="container-fluid" id="Windows">
-          <div class="Door">
+          <div id="DoorOut" class="Door">
            <div class="DoorDetails">
             
            </div>
           </div>
           
-      <div class="Window">
-<div class="Outside">
+      <div id="WindowID" class="Window">
+<div id="Out" class="Outside">
   <!-- <div class="WindowBuilding"></div> -->
 
 <!-- <div class="Build">
@@ -36,12 +36,14 @@
 </div>
 
 </div>
+<div id="Objects">
 <div class="Cup">C</div>
 
 <div class="Cup2">C</div>
 
 <div class="plate"></div>
 <div class="plate2"></div>
+</div>
 <div class="OnTable">
   
 </div>
@@ -131,21 +133,35 @@ data() {
 },
 mounted() {
    let current = new Date().getHours()
+   let ODoor = document.getElementById("Greeter")
+   let Objects = document.getElementById("Objects")
    let Greeting = ""
    if (current < 12) {
     Greeting = "Good Morning"
-    document.getElementById("Greeter").innerHTML = Greeting +  "🌅"
-
+    ODoor.innerHTML = Greeting +  "🌅"
+    ODoor.style.setProperty("color", "orange", "important")
    }
    else if (current < 18) { 
     Greeting = "Good Afternoon"
-    document.getElementById("Greeter").innerHTML = Greeting +  "🌇"
+    ODoor.innerHTML = Greeting +  "🌇"
+    ODoor.style.setProperty("color", "orange", "important")
+    document.body.style.setProperty("background-color",  "#4A1C02", "important")
 
    }
    else {
 
-    Greeting = "Good Evening"
-    document.getElementById("Greeter").innerHTML = Greeting +  "🌃"
+    Greeting = "Good Night..."
+    ODoor.innerHTML = Greeting +  "🌃"
+    ODoor.style.setProperty("color", "#49468a", "important")
+    document.body.style.setProperty("background-color",  "#070200", "important")
+    Objects.style.display = "none"
+    document.body.style.filter = "brightness(20%)"
+    document.getElementById("Out").style.backgroundImage = "linear-gradient(90deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
+    document.getElementById("DoorOut").style.backgroundImage = "linear-gradient(90deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
+    document.getElementById("BGShadow").style.display = "none"
+    document.getElementById("BG2").style.backgroundColor = "#2f1607"
+    document.getElementById("WindowID").style.border ="12px inset #2E1005"
+
    }
 
 },
