@@ -36,21 +36,38 @@
 </div>
 
 </div>
+<div class="ObjectCon">
 <div id="Objects">
 <div class="Cup">C</div>
+<div class="plate"></div>
+<div class="plate2"></div>
 
 <div class="Cup2">C</div>
 
+</div>
+<div id="Objects">
+<div class=" mt-3 book"></div>
+</div>
+<div id="Objects">
+<div class="Cup">C</div>
 <div class="plate"></div>
 <div class="plate2"></div>
+
+<div class="Cup2">C</div>
+
 </div>
+
+
+</div>
+
 <div class="OnTable">
   
 </div>
+
       </div>
       
       <!-- Right Side of Wall -->
- 
+ <div class="p-3"></div>
     </div>
     
 <!-- <div class="TimerContent ">
@@ -134,7 +151,7 @@ data() {
 mounted() {
    let current = new Date().getHours()
    let ODoor = document.getElementById("Greeter")
-   let Objects = document.getElementById("Objects")
+   let Objects = document.getElementById("ObjectCon")
    let Greeting = ""
    if (current < 12) {
     Greeting = "Good Morning"
@@ -161,7 +178,6 @@ mounted() {
     document.getElementById("BGShadow").style.display = "none"
     document.getElementById("BG2").style.backgroundColor = "#2f1607"
     document.getElementById("WindowID").style.border ="12px inset #2E1005"
-
    }
 
 },
