@@ -9,13 +9,16 @@
           </div>
           
       <div id="WindowID" class="Window">
+        
 <div id="Out" class="Outside">
+  
   <div class="Roof2"></div>
 
   <div class="Pane1"></div>
   <div class="PaneH"></div>
 
   <div class="Pane2"></div>
+  <div class="PaneB"></div>
 
   <!-- <div class="Build">
 <div class="Building"></div>
@@ -27,6 +30,7 @@
 
 
 </div>
+
 <div class="ObjectCon">
 <div id="Objects">
 <div class="Cup">C</div>
@@ -52,7 +56,7 @@
 </div>
 
 <div class="OnTable">
-  
+
 </div>
 
       </div>
