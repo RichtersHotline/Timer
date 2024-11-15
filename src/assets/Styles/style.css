@@ -168,6 +168,7 @@ margin:0 !important;
     height:100%;
  display:flex;
  justify-content:space-between;
+ flex-direction:row;
 }
 /* This is the actual colour that's "outside" */
 .Door {
@@ -310,7 +311,7 @@ display:flex;
     width:100%;
     height:100px;
     background: rgb(0,0,0);
-    background: linear-gradient(-180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, #040622 0%, #000000 100%);
   position:absolute;
   z-index:9999;
   opacity:0.3;
@@ -331,10 +332,12 @@ display:flex;
 
 .Roof2 {
     width:100%;
-    border-top: 70px solid #3a1d0c;
-    border-bottom: 95px solid transparent;
+    height:10vh;
+    background-color:#3a1d0c;
+    /* border-top: 70px solid #3a1d0c;
+    border-bottom: 35px solid transparent;
     border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
+    border-right: 75px solid transparent; */
 }
 
 .Pane {
@@ -398,14 +401,14 @@ display:flex;
     position:absolute;
   z-index:9910;
 }
-/* .Floor {
-    height:30vh;
+.Floor {
+    height:58vh;
     width:100%;
-    border-bottom: 40px solid 	#323031;
+    border-bottom: 30px solid 	#323031;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-       display:flex;
-} */
+    position:absolute
+}
 .Building {
     width:300px;
     height:53px;

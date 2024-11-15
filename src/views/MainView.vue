@@ -12,14 +12,15 @@
         
 <div id="Out" class="Outside">
   
-  <div class="Roof2"></div>
+  <div id="RoofID" class="Roof2">
+</div>
 
   <div class="Pane1"></div>
   <div class="PaneH"></div>
 
   <div class="Pane2"></div>
   <div class="PaneB"></div>
-
+  
   <!-- <div class="Build">
 <div class="Building"></div>
 <div class="Building"></div>
@@ -31,7 +32,7 @@
 
 </div>
 
-<div class="ObjectCon">
+<div id="Objs" class="ObjectCon">
 <div id="Objects">
 <div class="Cup">C</div>
 <div class="plate"></div>
@@ -150,7 +151,7 @@ data() {
 mounted() {
    let current = new Date().getHours()
    let ODoor = document.getElementById("Greeter")
-   let Objects = document.getElementById("ObjectCon")
+   let Objects = document.getElementById("Objs")
    let Greeting = ""
    if (current < 12) {
     Greeting = "Good Morning"
@@ -172,11 +173,12 @@ mounted() {
     document.body.style.setProperty("background-color",  "#070200", "important")
     Objects.style.display = "none"
     document.body.style.filter = "brightness(20%)"
-    document.getElementById("Out").style.backgroundImage = "linear-gradient(90deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
-    document.getElementById("DoorOut").style.backgroundImage = "linear-gradient(90deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
+    document.getElementById("Out").style.backgroundImage = "linear-gradient(0deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
+    document.getElementById("DoorOut").style.backgroundImage = "linear-gradient(00deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
     document.getElementById("BGShadow").style.display = "none"
     document.getElementById("BG2").style.backgroundColor = "#2f1607"
     document.getElementById("WindowID").style.border ="12px inset #2E1005"
+    document.getElementById("RoofID").style.backgroundColor = "#170b04"
    }
 
 },
