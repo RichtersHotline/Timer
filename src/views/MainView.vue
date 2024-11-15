@@ -152,19 +152,24 @@ mounted() {
    let current = new Date().getHours()
    let ODoor = document.getElementById("Greeter")
    let Objects = document.getElementById("Objs")
+   let Current = new Date()
+   let Hr = Current.getHours()
+   let Min = Current.getMinutes()
+  //  let Sec = Current.getSeconds()
+
    let Greeting = ""
    if (current < 12) {
      document.getElementById("Out").style.backgroundImage = "linear-gradient(180deg, rgba(83,115,161,1) 0%, rgba(249,214,158,1) 100%)"
     document.getElementById("DoorOut").style.backgroundImage = "linear-gradient(180deg, rgba(83,115,161,1) 0%, rgba(249,214,158,1) 100%)"
     Greeting = "Good Morning"
-    ODoor.innerHTML = Greeting +  "🌅"
+    ODoor.innerHTML = Greeting +  "🌅" + "           " + Hr + ":" + Min 
     ODoor.style.setProperty("color", "#5373a1", "important")
     document.body.style.filter = "brightness(110%)"
 
    }
    else if (current < 18) { 
     Greeting = "Good Afternoon"
-    ODoor.innerHTML = Greeting +  "🌇" + "," + "12:00"
+    ODoor.innerHTML = Greeting +  "🌇" + "           " + Hr + ":" + Min 
     ODoor.style.setProperty("color", "orange", "important")
     document.body.style.setProperty("background-color",  "#4A1C02", "important")
 
@@ -172,7 +177,7 @@ mounted() {
    else {
 
     Greeting = "Good Night..."
-    ODoor.innerHTML = Greeting +  "🌃"
+    ODoor.innerHTML = Greeting +  "🌃" + "           " + Hr + ":" + Min 
     ODoor.style.setProperty("color", "#49468a", "important")
     document.body.style.setProperty("background-color",  "#070200", "important")
     Objects.style.display = "none"
@@ -184,6 +189,12 @@ mounted() {
     document.getElementById("WindowID").style.border ="12px inset #2E1005"
     document.getElementById("RoofID").style.backgroundColor = "#170b04"
    }
+   function ConstantRefresh() {
+// location.reload()
+
+
+   }
+   ConstantRefresh()
 
 },
 methods: {

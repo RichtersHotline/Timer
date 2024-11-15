@@ -133,7 +133,7 @@ letter-spacing: 2px;
 z-index:9999;
 font-weight:bold;
 margin-left:70px;
-width:30%;
+width:70%;
 margin-left:2rem;
 padding:1px;
 }
@@ -377,7 +377,7 @@ display:flex;
   z-index:9910;
 }
 .PaneH {
-    width:100%;
+    width:199%;
     background-color:#4A1C02;
     bottom:70%;
     height:8px;
