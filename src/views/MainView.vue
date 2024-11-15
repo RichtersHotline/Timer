@@ -154,13 +154,17 @@ mounted() {
    let Objects = document.getElementById("Objs")
    let Greeting = ""
    if (current < 12) {
+     document.getElementById("Out").style.backgroundImage = "linear-gradient(180deg, rgba(83,115,161,1) 0%, rgba(249,214,158,1) 100%)"
+    document.getElementById("DoorOut").style.backgroundImage = "linear-gradient(180deg, rgba(83,115,161,1) 0%, rgba(249,214,158,1) 100%)"
     Greeting = "Good Morning"
     ODoor.innerHTML = Greeting +  "🌅"
-    ODoor.style.setProperty("color", "orange", "important")
+    ODoor.style.setProperty("color", "#5373a1", "important")
+    document.body.style.filter = "brightness(110%)"
+
    }
    else if (current < 18) { 
     Greeting = "Good Afternoon"
-    ODoor.innerHTML = Greeting +  "🌇"
+    ODoor.innerHTML = Greeting +  "🌇" + "," + "12:00"
     ODoor.style.setProperty("color", "orange", "important")
     document.body.style.setProperty("background-color",  "#4A1C02", "important")
 

@@ -189,8 +189,8 @@ border:2px solid black;
 width:1px;
 /* border-radius:50%; */
 position:relative;
-top:12px;
-left:150px;
+top:0.625rem;
+left:9.375rem;
 }
 /* This is to make the front background colour transparent to give the look of glass */
 .Door::before {
@@ -200,9 +200,10 @@ left:150px;
     left: 0;
     width: 100%;
     height: 100%;
-    border:4px solid black;
-    background-color: rgba(127, 182, 141, 0.2); /* Overlay color with opacity */
-    z-index: -1; /* This makes sure it stays behind the Door element's content */
+    border:4px solid #291107;
+
+    background-color: rgba(127, 182, 141, 0.2); 
+    z-index: -1; 
 }    
 .Cup {
 
