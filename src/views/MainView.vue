@@ -10,30 +10,21 @@
           
       <div id="WindowID" class="Window">
 <div id="Out" class="Outside">
-  <!-- <div class="WindowBuilding"></div> -->
+  <div class="Roof2"></div>
 
-<!-- <div class="Build">
+  <div class="Pane1"></div>
+  <div class="PaneH"></div>
+
+  <div class="Pane2"></div>
+
+  <!-- <div class="Build">
 <div class="Building"></div>
 <div class="Building"></div>
 <div class="Building"></div>
 
 </div> -->
 
-  <!-- <div class="Roof">
-  </div> -->
-  <!-- <div class="Roof2">
-    
-  </div> -->
-  <div class="Floor">
-    <!-- <div class="BuildingContent">
-    <div class="WindowBuilding">
 
-    </div>
-    <div class="Building">
-      
-    </div>
-  </div> -->
-</div>
 
 </div>
 <div class="ObjectCon">
@@ -49,11 +40,11 @@
 <div class=" mt-3 book"></div>
 </div>
 <div id="Objects">
-<div class="Cup">C</div>
+<div class="Cup text-end">ↄ</div>
 <div class="plate"></div>
 <div class="plate2"></div>
 
-<div class="Cup2">C</div>
+<div class="Cup2 text-end ">ↄ</div>
 
 </div>
 
@@ -83,6 +74,8 @@
     <div class="ShadowFlex">
     <div class="container-fluid" id="BGShadow">
     </div>
+    <div class="People"></div>
+
   </div>
     <div class="container-fluid" id="BG3">
     <div class="Boards"></div>
@@ -140,6 +133,8 @@
     <div class="Boards"></div>
 
     </div>
+    <div class="People"></div>
+
   </template>
   <script>
   export default {
