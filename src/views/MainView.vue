@@ -1,10 +1,11 @@
+
 <template>
     <div class="container-fluid" id="BG">
         <h2 class="" id="Greeter"></h2>
         <div class="container-fluid" id="Windows">
           <div id="DoorOut" class="Door">
            <div class="DoorDetails">
-            
+          
            </div>
           </div>
           
@@ -144,7 +145,12 @@
   <script>
   export default {
 data() {
-
+  this.current = new Date().getHours()
+  this.ODoor = document.getElementById("Greeter")
+  this.Objects = document.getElementById("Objs")
+  this.Current = new Date()
+  this.Hr = this.Current.getHours()
+  this. Min = this.Current.getMinutes().toString().padStart(2, "0")
 
 
 },
@@ -154,7 +160,7 @@ mounted() {
    let Objects = document.getElementById("Objs")
    let Current = new Date()
    let Hr = Current.getHours()
-   let Min = Current.getMinutes()
+   let Min = Current.getMinutes().toString().padStart(2, "0")
   //  let Sec = Current.getSeconds()
 
    let Greeting = ""
@@ -199,37 +205,15 @@ mounted() {
 },
 methods: {
 
- Click() {
-    // let isClicked = true;
-   let seconds = 20
-   let Background = document.getElementById("BG")
-   let CD = setInterval(function() {
-document.getElementById("Timer").innerHTML = "0:" + seconds
-    seconds--
-   switch(seconds) {
-  case -1: 
-  clearInterval(CD) 
-  console.log("ended")
-  document.getElementById("Stopper").innerHTML = "Restart Timer"
-  Background.classList.add("Animation3")
-
-  break; 
-  case 9:
-    console.log("Halfway")
-    Background.classList.add("Animation2")
-
-
-   }
-   if (seconds > 0) {
-    
-    document.getElementById("Stopper").innerHTML = "Stop Timer"
-    // Background.classList.add("Animation1")
-
-
-   }
-}, 1000)
-
- }
+   Updater() {
+    this.current = new Date().getHours()
+  this.ODoor = document.getElementById("Greeter")
+  this.Objects = document.getElementById("Objs")
+  this.Current = new Date()
+  this.Hr = this.Current.getHours()
+  this. Min = this.Current.getMinutes().toString().padStart(2, "0")
+   
+   },
 
    }
 
