@@ -140,7 +140,12 @@
 
     </div>
     <div class="People"></div>
+    <div id="Overlay">
+<div class="overText">
+  <p>{{ Greeting }}</p>
+</div>
 
+    </div>
   </template>
   <script>
   export default {
@@ -151,10 +156,13 @@ data() {
   this.Current = new Date()
   this.Hr = this.Current.getHours()
   this. Min = this.Current.getMinutes().toString().padStart(2, "0")
+  return {
+    Greeting: ""
 
-
+  }
 },
 mounted() {
+
    let current = new Date().getHours()
    let ODoor = document.getElementById("Greeter")
    let Objects = document.getElementById("Objs")
@@ -162,6 +170,8 @@ mounted() {
    let Hr = Current.getHours()
    let Min = Current.getMinutes().toString().padStart(2, "0")
   //  let Sec = Current.getSeconds()
+
+  setInterval(this.Updater, 1000)
 
    let Greeting = ""
    if (current < 12) {
@@ -195,12 +205,6 @@ mounted() {
     document.getElementById("WindowID").style.border ="12px inset #2E1005"
     document.getElementById("RoofID").style.backgroundColor = "#170b04"
    }
-   function ConstantRefresh() {
-// location.reload()
-
-
-   }
-   ConstantRefresh()
 
 },
 methods: {
@@ -212,8 +216,42 @@ methods: {
   this.Current = new Date()
   this.Hr = this.Current.getHours()
   this. Min = this.Current.getMinutes().toString().padStart(2, "0")
-   
+  this.setGreeting()
    },
+   setGreeting() {
+   if (this.current < 12) {
+     document.getElementById("Out").style.backgroundImage = "linear-gradient(180deg, rgba(83,115,161,1) 0%, rgba(249,214,158,1) 100%)"
+    document.getElementById("DoorOut").style.backgroundImage = "linear-gradient(180deg, rgba(83,115,161,1) 0%, rgba(249,214,158,1) 100%)"
+    this.Greeting = "Good Morning"
+    this.ODoor.innerHTML = this.Greeting +  "🌅" + "           " + this.Hr + ":" + this.Min 
+    this.ODoor.style.setProperty("color", "#5373a1", "important")
+    document.body.style.filter = "brightness(110%)"
+
+   }
+   else if (this.current < 18) { 
+    this.Greeting = "Good Afternoon"
+    this.ODoor.innerHTML = this.Greeting +  "🌇" + "           " + this.Hr + ":" + this.Min 
+    this.ODoor.style.setProperty("color", "orange", "important")
+    document.body.style.setProperty("background-color",  "#4A1C02", "important")
+
+   }
+   else {
+
+    this.Greeting = "Good Night..."
+    this.ODoor.innerHTML = this.Greeting +  "🌃" + "           " + this.Hr + ":" + this.Min 
+    this.ODoor.style.setProperty("color", "#49468a", "important")
+    document.body.style.setProperty("background-color",  "#070200", "important")
+    this.Objects.style.display = "none"
+    document.body.style.filter = "brightness(20%)"
+    document.getElementById("Out").style.backgroundImage = "linear-gradient(0deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
+    document.getElementById("DoorOut").style.backgroundImage = "linear-gradient(00deg, rgba(4,6,34,1) 0%, rgba(0,0,0,1) 100%)"
+    document.getElementById("BGShadow").style.display = "none"
+    document.getElementById("BG2").style.backgroundColor = "#2f1607"
+    document.getElementById("WindowID").style.border ="12px inset #2E1005"
+    document.getElementById("RoofID").style.backgroundColor = "#170b04"
+   }
+
+   }
 
    }
 
