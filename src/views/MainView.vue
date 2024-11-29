@@ -139,7 +139,9 @@
 
     </div>
     <div class="People"></div>
+    <div id="Overlay">
 
+    </div>
   </template>
   <script>
   export default {
@@ -170,7 +172,7 @@ mounted() {
     ODoor.innerHTML = Greeting +  "🌅" + "           " + Hr + ":" + Min 
     ODoor.style.setProperty("color", "#5373a1", "important")
     document.body.style.filter = "brightness(110%)"
-
+    document.getElementById("BGShadow").height = "5"
    }
    else if (current < 18) { 
     Greeting = "Good Afternoon"
